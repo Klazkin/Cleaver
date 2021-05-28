@@ -1,0 +1,246 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/main_window.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://scenes/preview.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/file_paths.tscn" type="PackedScene" id=4]
+
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath("Viewport")
+
+[node name="MainWindow" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 300.0
+color = Color( 0.137255, 0.137255, 0.137255, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 16, 16 )
+transparent_bg = true
+handle_input_locally = false
+hdr = false
+disable_3d = true
+usage = 0
+render_target_v_flip = true
+render_target_update_mode = 3
+
+[node name="segment" type="Sprite" parent="Viewport"]
+z_index = 1
+texture = ExtResource( 2 )
+centered = false
+hframes = 4
+vframes = 4
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 190.0
+margin_top = 191.0
+margin_right = 296.0
+margin_bottom = 297.0
+color = Color( 0.270588, 0.270588, 0.270588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="segment_preview" type="TextureRect" parent="."]
+anchor_left = 0.324
+anchor_top = 0.325
+anchor_right = 0.487
+anchor_bottom = 0.488
+margin_left = 0.0543518
+margin_top = -0.159134
+margin_right = 0.254333
+margin_bottom = 0.040863
+texture = SubResource( 1 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Preview" parent="." instance=ExtResource( 3 )]
+margin_left = 4.41425
+margin_right = -1.58575
+
+[node name="Properties" type="ColorRect" parent="."]
+anchor_top = 0.135
+anchor_right = 0.5
+anchor_bottom = 0.317
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+color = Color( 0.270588, 0.270588, 0.270588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x" type="Label" parent="Properties"]
+anchor_left = 0.714
+anchor_top = 0.145
+anchor_right = 0.782
+anchor_bottom = 0.368
+margin_left = 0.0839844
+margin_top = 0.0359993
+margin_right = 0.09198
+margin_bottom = 0.0223961
+text = "x"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_grid_size" type="Label" parent="Properties"]
+anchor_right = 0.5
+anchor_bottom = 0.5
+text = "Grid size:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_warning" type="Label" parent="Properties"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -0.599998
+custom_colors/font_color = Color( 1, 0.772549, 0.384314, 1 )
+text = "Grid is outside
+ the bounds!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_sheet_size" type="Label" parent="Properties"]
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.725
+text = "Sheet size: 64 x 64"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_sprite_count" type="Label" parent="Properties"]
+anchor_top = 0.725
+anchor_right = 0.5
+anchor_bottom = 1.0
+text = "Sprite count: 16"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x_size" type="LineEdit" parent="Properties"]
+anchor_left = 0.5
+anchor_right = 0.752
+anchor_bottom = 0.5
+margin_left = 5.0
+margin_top = 15.0
+margin_right = -11.088
+margin_bottom = -12.6
+custom_colors/font_color = Color( 1, 0.533333, 0.533333, 1 )
+text = "16"
+placeholder_text = "X value"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="y_size" type="LineEdit" parent="Properties"]
+anchor_left = 0.75
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 9.5
+margin_top = 15.0
+margin_right = -6.0
+margin_bottom = -12.6
+custom_colors/font_color = Color( 0.533333, 0.533333, 1, 1 )
+text = "16"
+placeholder_text = "Y value"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FilePaths" parent="." instance=ExtResource( 4 )]
+
+[node name="blocker" type="ColorRect" parent="."]
+visible = false
+anchor_top = 0.135
+anchor_right = 1.0
+anchor_bottom = 0.5
+color = Color( 0, 0, 0, 0.901961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="blocker"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "No sheet sprite selected"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_split" type="Button" parent="."]
+anchor_left = 0.0897658
+anchor_top = 0.391
+anchor_right = 0.225
+anchor_bottom = 0.424
+margin_left = 1.14052
+margin_top = -7.60001
+margin_bottom = 6.59999
+text = "SPLIT!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="progress_label" type="Label" parent="."]
+visible = false
+margin_left = 7.28381
+margin_top = 231.284
+margin_right = 185.284
+margin_bottom = 245.284
+text = "Working: "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+visible = false
+margin_left = 5.28381
+margin_top = 247.284
+margin_right = 184.284
+margin_bottom = 269.284
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_other" type="Button" parent="."]
+margin_left = 2.75508
+margin_top = 278.439
+margin_right = 63.7551
+margin_bottom = 298.439
+text = "Other..."
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.219608 )
+margin_left = 20.4949
+margin_top = 191.056
+margin_right = 177.495
+margin_bottom = 205.056
+text = "for issues: Matpac#8102"

@@ -1,0 +1,122 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/materials_compare.gd" type="Script" id=1]
+
+[node name="materials_compare" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_right = -1.0
+margin_bottom = 300.0
+color = Color( 0.137255, 0.137255, 0.137255, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_compare" type="Button" parent="."]
+margin_left = 479.0
+margin_top = 6.0
+margin_right = 590.0
+margin_bottom = 34.0
+text = "Compare!"
+
+[node name="label_result" type="Label" parent="."]
+margin_left = 3.0
+margin_top = 22.0
+margin_right = 597.0
+margin_bottom = 295.0
+text = "Result:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="label_result"]
+margin_left = 2.0
+margin_top = 19.0
+margin_right = 593.0
+margin_bottom = 543.0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam tempor orci eu lobortis elementum nibh. Arcu ac tortor dignissim convallis aenean. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Nunc mattis enim ut tellus elementum. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Dictum fusce ut placerat orci. Vitae purus faucibus ornare suspendisse sed nisi. Dui vivamus arcu felis bibendum ut. Amet nisl suscipit adipiscing bibendum est ultricies. Ultrices neque ornare aenean euismod elementum nisi quis. Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Dictum varius duis at consectetur. Ipsum consequat nisl vel pretium lectus quam. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Congue nisi vitae suscipit tellus mauris a diam maecenas.
+
+Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Justo donec enim diam vulputate ut pharetra sit amet aliquam. Purus in massa tempor nec feugiat nisl pretium fusce. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Arcu odio ut sem nulla pharetra diam sit amet nisl. Augue interdum velit euismod in pellentesque. Augue eget arcu dictum varius duis at. Ut lectus arcu bibendum at varius vel pharetra vel. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Sagittis aliquam malesuada bibendum arcu vitae elementum. Ac odio tempor orci dapibus ultrices in iaculis. Tristique sollicitudin nibh sit amet commodo nulla. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Placerat orci nulla pellentesque dignissim enim sit. Auctor elit sed vulputate mi sit. In hac habitasse platea dictumst quisque sagittis purus sit amet. Massa tincidunt dui ut ornare lectus sit amet est.
+
+Urna condimentum mattis pellentesque id nibh. Dictum varius duis at consectetur lorem donec. Tincidunt arcu non sodales neque sodales ut. Et malesuada fames ac turpis egestas. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Turpis massa tincidunt dui ut. Phasellus vestibulum lorem sed risus ultricies. Dictum varius duis at consectetur lorem donec massa. Id velit ut tortor pretium viverra suspendisse potenti nullam. Volutpat odio facilisis mauris sit amet massa vitae tortor condimentum. Id leo in vitae turpis massa sed elementum. Tempor orci dapibus ultrices in iaculis. Leo in vitae turpis massa. Consequat semper viverra nam libero justo laoreet sit. Velit dignissim sodales ut eu sem integer vitae justo. Posuere ac ut consequat semper viverra nam libero justo. Et sollicitudin ac orci phasellus egestas tellus rutrum. Justo laoreet sit amet cursus. Mi proin sed libero enim sed.
+
+At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Massa ultricies mi quis hendrerit dolor magna eget est. A erat nam at lectus. Libero justo laoreet sit amet cursus sit. Ac tortor dignissim convallis aenean et tortor at risus viverra. Non blandit massa enim nec dui nunc mattis. Tellus mauris a diam maecenas sed enim ut sem. Eros donec ac odio tempor. Turpis massa sed elementum tempus egestas sed. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Mattis rhoncus urna neque viverra justo nec ultrices dui. Eu ultrices vitae auctor eu. Hendrerit gravida rutrum quisque non tellus. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. Orci nulla pellentesque dignissim enim sit. Semper feugiat nibh sed pulvinar. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Nec feugiat nisl pretium fusce id velit ut tortor.
+
+Sem et tortor consequat id porta nibh venenatis cras sed. Eu scelerisque felis imperdiet proin fermentum leo. Sapien faucibus et molestie ac feugiat sed lectus. Duis ultricies lacus sed turpis tincidunt id. Id porta nibh venenatis cras sed. Natoque penatibus et magnis dis. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Amet tellus cras adipiscing enim eu turpis. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Venenatis urna cursus eget nunc scelerisque viverra. Enim nunc faucibus a pellentesque sit amet porttitor eget. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Convallis posuere morbi leo urna molestie at. Et malesuada fames ac turpis egestas sed tempus.
+
+Quisque non tellus orci ac auctor augue. Ultricies integer quis auctor elit sed vulputate mi. Tincidunt vitae semper quis lectus nulla at volutpat diam. Amet consectetur adipiscing elit ut aliquam purus sit amet. Senectus et netus et malesuada fames ac. Diam ut venenatis tellus in metus vulputate. Morbi tempus iaculis urna id volutpat. Vulputate dignissim suspendisse in est ante in nibh. Fermentum posuere urna nec tincidunt praesent semper. Augue lacus viverra vitae congue eu. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra.
+
+Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Fermentum posuere urna nec tincidunt praesent semper. Pharetra vel turpis nunc eget lorem dolor sed. Libero id faucibus nisl tincidunt eget nullam. Nulla posuere sollicitudin aliquam ultrices sagittis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Consectetur a erat nam at lectus urna duis convallis. Nullam non nisi est sit amet facilisis. Nec nam aliquam sem et tortor consequat. Cras pulvinar mattis nunc sed blandit. Enim eu turpis egestas pretium aenean pharetra magna. Pretium lectus quam id leo in vitae turpis massa. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Ipsum a arcu cursus vitae congue. Imperdiet massa tincidunt nunc pulvinar sapien et ligula.
+
+© 2015 — 2021"
+show_line_numbers = true
+hiding_enabled = true
+wrap_enabled = true
+minimap_draw = true
+minimap_width = 46
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_old" type="Button" parent="."]
+margin_left = 148.268
+margin_top = 6.37004
+margin_right = 302.268
+margin_bottom = 36.37
+text = "select progenitor json"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="button_old"]
+margin_left = 15.0
+margin_top = 51.0
+margin_right = 387.0
+margin_bottom = 277.0
+rect_scale = Vector2( 0.9, 0.9 )
+window_title = "Open a File"
+resizable = true
+mode = 0
+access = 2
+current_dir = "/"
+current_path = "/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_new" type="Button" parent="."]
+margin_left = 316.655
+margin_top = 6.06758
+margin_right = 466.655
+margin_bottom = 36.0676
+text = "select successor json"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="button_new"]
+margin_left = 65.0
+margin_top = 45.0
+margin_right = 431.0
+margin_bottom = 284.0
+rect_scale = Vector2( 0.9, 0.9 )
+window_title = "Open a File"
+resizable = true
+mode = 0
+access = 2
+current_dir = "/"
+current_path = "/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.145098 )
+margin_left = 2.0
+margin_top = 577.0
+margin_right = 601.0
+margin_bottom = 614.0
+text = "Made specifically to parse Metallurgy 4 Reforged materials.json data"
+align = 1

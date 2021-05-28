@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://shaders/preview_line.shader" type="Shader" id=1]
+[ext_resource path="res://scripts/preview.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/line_color_x = Color( 1, 0, 0, 1 )
+shader_param/line_color_y = Color( 0, 0, 1, 1 )
+shader_param/out_color = Color( 0.9, 0.7, 0, 1 )
+shader_param/grid_size = Vector2( 16, 16 )
+
+[node name="Preview" type="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.135
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
+rect_clip_content = true
+color = Color( 0.270588, 0.270588, 0.270588, 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="textrue_preview" type="TextureRect" parent="."]
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 147, 106.5 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slider_visual" type="VSlider" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 213.0
+margin_right = 16.0
+margin_bottom = 213.0
+rect_scale = Vector2( -1, -1 )
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+editable = false
+scrollable = false
+tick_count = 8
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_preview" type="Label" parent="."]
+anchor_left = 0.028
+anchor_top = 0.03
+anchor_right = 0.198
+anchor_bottom = 0.096
+margin_left = 0.101831
+margin_top = -0.040391
+margin_right = 0.121826
+margin_bottom = -0.0983906
+text = "Preview"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
